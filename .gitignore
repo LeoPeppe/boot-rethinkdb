@@ -6,3 +6,12 @@
 .gradle
 build
 data/
+
+
+target
+
+.settings
+/.settings/
+.classpath
+.project
+

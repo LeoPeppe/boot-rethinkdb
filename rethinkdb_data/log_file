@@ -1,0 +1,60 @@
+2017-10-24T13:42:48.627165820 0.295301s notice: Recursively removing directory /home/leo/git/boot-rethinkdb/rethinkdb_data/tmp
+2017-10-24T13:42:48.675744722 0.343878s notice: Initializing directory /home/leo/git/boot-rethinkdb/rethinkdb_data
+2017-10-24T13:42:48.675912248 0.344045s info: Creating a default database for your convenience. (This is because you ran 'rethinkdb' without 'create', 'serve', or '--join', and the directory '/home/leo/git/boot-rethinkdb/rethinkdb_data' did not already exist or is empty.)
+2017-10-24T13:42:48.675995428 0.344128s notice: Running rethinkdb 2.3.6~0xenial (GCC 5.3.1)...
+2017-10-24T13:42:48.680492942 0.348629s notice: Running on Linux 4.4.0-89-generic x86_64
+2017-10-24T13:42:48.680608282 0.348741s notice: Loading data from directory /home/leo/git/boot-rethinkdb/rethinkdb_data
+2017-10-24T13:42:49.025945135 0.694078s info: Automatically using cache size of 2854 MB
+2017-10-24T13:42:49.042379615 0.710512s notice: Listening for intracluster connections on port 29015
+2017-10-24T13:42:49.112376933 0.780510s notice: Listening for client driver connections on port 28015
+2017-10-24T13:42:49.112789638 0.780922s notice: Listening for administrative HTTP connections on port 8080
+2017-10-24T13:42:49.112798129 0.780930s notice: Listening on cluster addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-10-24T13:42:49.112799237 0.780931s notice: Listening on driver addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-10-24T13:42:49.112808078 0.780940s notice: Listening on http addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-10-24T13:42:49.112812024 0.780944s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2017-10-24T13:42:49.112819466 0.780951s notice: Server ready, "leo_X55VD_c95" 251cbb18-ce68-4740-a743-1a6603479078
+2017-10-24T14:03:55.276189000 1266.944321s info: Table d5b3b398-ce9a-4fb7-bf19-1e7e063601e2: Starting a new Raft election for term 1.
+2017-10-24T14:03:55.276409283 1266.944541s info: Table d5b3b398-ce9a-4fb7-bf19-1e7e063601e2: Added replica on this server.
+2017-10-24T14:03:55.450501147 1267.118633s info: Table d5b3b398-ce9a-4fb7-bf19-1e7e063601e2: This server is Raft leader for term 1. Latest log index is 0.
+2017-10-24T14:03:55.987076378 1267.655209s info: Table d5b3b398-ce9a-4fb7-bf19-1e7e063601e2: Configuration is changing.
+2017-10-24T14:14:29.549065588 1901.217198s notice: Server got SIGINT from pid 0, uid 0; shutting down...
+2017-10-24T14:14:29.549239976 1901.217372s notice: Shutting down client connections...
+2017-10-24T14:14:29.549947042 1901.218079s notice: All client connections closed.
+2017-10-24T14:14:29.550003206 1901.218135s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2017-10-24T14:14:29.579756569 1901.247889s notice: Storage engine shut down.
+2017-10-24T14:14:30.698595763 0.146084s notice: Running rethinkdb 2.3.6~0xenial (GCC 5.3.1)...
+2017-10-24T14:14:30.703233160 0.150724s notice: Running on Linux 4.4.0-89-generic x86_64
+2017-10-24T14:14:30.703406012 0.150894s notice: Loading data from directory /home/leo/git/boot-rethinkdb/rethinkdb_data
+2017-10-24T14:14:30.774655844 0.222144s info: Automatically using cache size of 1741 MB
+2017-10-24T14:14:30.776006629 0.223495s notice: Listening for intracluster connections on port 29015
+2017-10-24T14:14:30.824783974 0.272272s notice: Listening for client driver connections on port 28015
+2017-10-24T14:14:30.825270205 0.272758s notice: Listening for administrative HTTP connections on port 8080
+2017-10-24T14:14:30.825274937 0.272762s notice: Listening on cluster addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-10-24T14:14:30.825278390 0.272766s notice: Listening on driver addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-10-24T14:14:30.825284404 0.272772s notice: Listening on http addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-10-24T14:14:30.825288163 0.272776s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2017-10-24T14:14:30.825292800 0.272780s notice: Server ready, "leo_X55VD_c95" 251cbb18-ce68-4740-a743-1a6603479078
+2017-10-24T14:14:31.918161450 1.365649s info: Table d5b3b398-ce9a-4fb7-bf19-1e7e063601e2: Starting a new Raft election for term 2.
+2017-10-24T14:14:32.035630979 1.483119s info: Table d5b3b398-ce9a-4fb7-bf19-1e7e063601e2: This server is Raft leader for term 2. Latest log index is 4.
+2017-10-24T15:20:54.769234246 3984.216723s notice: Server got SIGINT from pid 0, uid 0; shutting down...
+2017-10-24T15:20:54.769414105 3984.216902s notice: Shutting down client connections...
+2017-10-24T15:20:54.769520184 3984.217008s notice: All client connections closed.
+2017-10-24T15:20:54.769522392 3984.217010s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
+2017-10-24T15:20:54.772157838 3984.219646s notice: Storage engine shut down.
+2017-10-24T15:20:56.130095650 0.209842s notice: Running rethinkdb 2.3.6~0xenial (GCC 5.3.1)...
+2017-10-24T15:20:56.133855350 0.213605s notice: Running on Linux 4.4.0-89-generic x86_64
+2017-10-24T15:20:56.133933863 0.213680s notice: Loading data from directory /home/leo/git/boot-rethinkdb/rethinkdb_data
+2017-10-24T15:20:56.211996714 0.291743s info: Automatically using cache size of 1185 MB
+2017-10-24T15:20:56.212572811 0.292319s notice: Listening for intracluster connections on port 29015
+2017-10-24T15:20:56.250787825 0.330535s notice: Listening for client driver connections on port 28015
+2017-10-24T15:20:56.251476659 0.331224s notice: Listening for administrative HTTP connections on port 8080
+2017-10-24T15:20:56.251483282 0.331229s notice: Listening on cluster addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-10-24T15:20:56.251485839 0.331232s notice: Listening on driver addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-10-24T15:20:56.251488573 0.331235s notice: Listening on http addresses: 127.0.0.1, 127.0.1.1, ::1
+2017-10-24T15:20:56.251543841 0.331290s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2017-10-24T15:20:56.251548277 0.331294s notice: Server ready, "leo_X55VD_c95" 251cbb18-ce68-4740-a743-1a6603479078
+2017-10-24T15:20:57.637018490 1.716765s info: Table d5b3b398-ce9a-4fb7-bf19-1e7e063601e2: Starting a new Raft election for term 3.
+2017-10-24T15:20:57.828477604 1.908224s info: Table d5b3b398-ce9a-4fb7-bf19-1e7e063601e2: This server is Raft leader for term 3. Latest log index is 7.
+2017-10-24T16:29:48.277556340 4132.357303s info: Table e1531a35-d5e6-4519-bb3e-1d1cc2817fd8: Starting a new Raft election for term 1.
+2017-10-24T16:29:48.278027194 4132.357774s info: Table e1531a35-d5e6-4519-bb3e-1d1cc2817fd8: Added replica on this server.
+2017-10-24T16:29:48.323704932 4132.403452s info: Table e1531a35-d5e6-4519-bb3e-1d1cc2817fd8: This server is Raft leader for term 1. Latest log index is 0.

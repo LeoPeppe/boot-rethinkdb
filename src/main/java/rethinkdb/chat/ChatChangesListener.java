@@ -26,15 +26,17 @@ public class ChatChangesListener {
 
     @Async
     public void pushChangesToWebSocket() {
-        Cursor<ChatMessage> cursor = r.db("chat").table("messages").changes()
-                .getField("new_val")
+        Cursor<ChatMessage> cursor = r.db("chat").table("messages").changes().getField("new_val")
                 .run(connectionFactory.createConnection(), ChatMessage.class);
+    	
 
         while (cursor.hasNext()) {
             ChatMessage chatMessage = cursor.next();
             log.info("New message: {}", chatMessage.message);
             webSocket.convertAndSend("/topic/messages", chatMessage);
         }
+        
+       
     }
 
 }

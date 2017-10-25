@@ -34,6 +34,11 @@ public class DbInitializer implements InitializingBean {
         if (!tables.contains("messages")) {
             r.db("chat").tableCreate("messages").run(connection);
             r.db("chat").table("messages").indexCreate("time").run(connection);
+            
+        }
+        if (!tables.contains("users")) {
+            r.db("chat").tableCreate("users").run(connection);
+            r.db("chat").table("users").indexCreate("fistName").run(connection);
         }
     }
 }

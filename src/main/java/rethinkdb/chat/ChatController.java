@@ -4,6 +4,7 @@ import com.rethinkdb.RethinkDB;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -23,9 +24,13 @@ public class ChatController {
 
     @Autowired
     private RethinkDBConnectionFactory connectionFactory;
-
+    
+    
+    
+    @CrossOrigin(origins = "*")
     @RequestMapping(method = RequestMethod.POST)
     public ChatMessage postMessage(@RequestBody ChatMessage chatMessage) {
+    	
         chatMessage.setTime(OffsetDateTime.now());
         HashMap run = r.db("chat").table("messages").insert(chatMessage)
                 .run(connectionFactory.createConnection());
@@ -34,7 +39,9 @@ public class ChatController {
         return chatMessage;
     }
 
-    @RequestMapping(method = RequestMethod.GET)
+    @CrossOrigin(origins = "*")
+//    @RequestMapping(method = RequestMethod.GET,value="/chat2")
+    @RequestMapping(method = RequestMethod.GET,value="/chat2")
     public List<ChatMessage> getMessages() {
 
         List<ChatMessage> messages = r.db("chat").table("messages")
